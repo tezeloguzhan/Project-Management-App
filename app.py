@@ -15,6 +15,8 @@ from flask_jwt_extended import JWTManager
 from flask_restful import Resource
 from flask_restful import Api
 from api.routes import initialize_routes
+from database.modelss.comments import Comments
+from database.modelss.tasks import Task
 
 app = Flask(__name__)
 DB_URL="mongodb+srv://oguzhan:{}@cluster0.nupmm.mongodb.net/{}?retryWrites=true&w=majority".format(database_password,database_name)#constants.py dosyası açıp bilgilerinizi giriniz
@@ -29,6 +31,16 @@ initialize_routes(api)
 app.config["JWT_SECRET_KEY"] = "super-secret"  #Test için default değer , ürüne çıkıldığında özel key üretiniz. 
 jwt = JWTManager(app)
 
+""" ÖRNEK TASK VE USER OLUŞTURMA(SUPERUSER)
+@app.route('/api/example_data',methods=["POST"])
+def example_data():
+   
+    task1=Task(task_id=1,title="Konu 1",text="Açıklama 1")
+    task1.save()
+    new_user = Users(name="superuser",email="superuser@gmail.com", password="123456", access={"admin": True})
+    new_user.save()
+    return make_response('',201)
+"""
 
 
 if __name__ == "__main__":

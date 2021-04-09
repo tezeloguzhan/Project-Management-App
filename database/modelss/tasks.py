@@ -3,7 +3,7 @@ from database.modelss.users import Users
 from database.modelss.projects import Projects
 from database.modelss.comments import Comments
 from database.modelss.status import *
-
+Status = ('receipt', 'start', 'control', 'finish')
 #Projelerin İş Kayıtları 
 class Task(Document):
     task_id         = IntField(primary_key=True)
@@ -16,7 +16,7 @@ class Task(Document):
     user            = ReferenceField(Users)
     project         = ReferenceField(Projects)
     comments        = ListField(EmbeddedDocumentField(Comments))
-    task_status     = EmbeddedDocumentField(TaskStatus, default=TaskStatus(receipt=True, start=False,control=False,finish=False))
+    task_status     = StringField(choices=Status)
 
 
     def to_json(self):
