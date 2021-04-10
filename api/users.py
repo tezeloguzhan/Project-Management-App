@@ -1,14 +1,15 @@
-from database.schemas.users_schema import UsersSchema
+from database.schemas import UsersSchema
 from flask_restful import Resource
-from database.modelss.users import Users
-from flask_jwt_extended import create_access_token, create_refresh_token
-from flask_jwt_extended import get_jwt_identity
-from flask_jwt_extended import jwt_required
-from flask_jwt_extended import JWTManager
+from database.models import Users
+from flask_jwt_extended import create_access_token, create_refresh_token,get_jwt_identity,jwt_required,JWTManager
 from flask import Flask,request,jsonify
 from api.errors import unauthorized
 import datetime
 
+""" Admin Girişi
+"email":"adminuser@gmail.com",
+"password":"123456"
+"""
 
 #Kullanıcıları Görüntüleme    
 class UsersApi(Resource):
