@@ -49,14 +49,9 @@ if __name__ == "__main__":
 
 POSTMAN Dökümantasyonuna ulaşmak için : <br/>
 [Postman Dökümantasyon](https://documenter.getpostman.com/view/14844311/TzCV3QDL) <br/>
-<br/>
-| METOD | İŞLEM | ENDPOINT |
-| ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  |
-<br/>
+
 **Kullanıcı İşlemleri**
-<br/>
+
 
 | METOD   | İŞLEM                         | ENDPOINT |
 | :---    | :---:                         | ---:     |
@@ -67,7 +62,7 @@ POSTMAN Dökümantasyonuna ulaşmak için : <br/>
 **İş Kayıt İşlemleri**
 
 | METOD  | İŞLEM                            | ENDPOINT                  |
-| ——     | ——                               | ——                        |
+| :---   | :---:                            | ---:                      |
 | GET    |  Tüm İş Kayıtlarını Getirme      | /tasks                    |
 | GET    |  İstenilen İş Kaydını Getirme    | /tasks/<task_id>          |
 | POST   | İş Kayıt Oluşturma               | /addtask                  |
@@ -79,7 +74,7 @@ POSTMAN Dökümantasyonuna ulaşmak için : <br/>
 **Proje İşlemleri**
 
 | METOD  | İŞLEM                 | ENDPOINT                     |
-| ——     | ——                    | ——                           |
+| :---   | :---:                 | ---:                         |
 | GET    | Tüm Projeleri Getirme | /projects                    |
 | POST   | Proje Oluşturma       | /addprojects                 |
 | DELETE | Proje Silme           | /delete/project/<project_id> |
