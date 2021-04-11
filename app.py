@@ -14,19 +14,11 @@ import os
 docker run -p 5000:5000 --rm testflaskapp
 """
 app = Flask(__name__)
-DB_URL="mongodb+srv://oguzhan:{}@cluster0.nupmm.mongodb.net/{}?retryWrites=true&w=majority".format(database_password,database_name)#constants.py dosyası açıp bilgilerinizi giriniz
-app.config['MONGODB_HOST'] = DB_URL
-app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
-app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0' 
-celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
-celery.conf.update(app.config)
+DB_URL="mongodb+srv://oguzhan:{}@cluster0.xemc7.mongodb.net/{}?retryWrites=true&w=majority".format(database_password,database_name)#constants.py dosyası açıp bilgilerinizi giriniz
 
-app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
-app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
-app.config['MAIL_DEFAULT_SENDER'] = 'flask@example.com'
+app.config['MONGODB_HOST'] = DB_URL
+
+
 db=MongoEngine()
 db.init_app(app)
 
@@ -41,4 +33,4 @@ jwt = JWTManager(app)
 
 
 if __name__ == "__main__":
-    app.run(debug=True) #docker için host=0.0.0.0
+    app.run(debug=True) #docker için host="0.0.0.0"
