@@ -2,7 +2,7 @@ FROM python:3
 
 WORKDIR /Project-Management-App
 
-ADD . /app
+ADD . /Project-Management-App
 
 EXPOSE 5000
 
