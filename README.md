@@ -3,6 +3,7 @@
 **Flask** <br/>
 **Flask Rest Api** <br/>
 **Flask Marshmallow** <br/>
+**Flask JWT** <br/>
 **MongoEngine** <br/>
 **Docker** <br/>
 
@@ -66,7 +67,7 @@ POSTMAN Dökümantasyonuna ulaşmak için : <br/>
 | GET    |  Tüm İş Kayıtlarını Getirme      | /tasks                    |
 | GET    |  İstenilen İş Kaydını Getirme    | /tasks/<task_id>          |
 | POST   | İş Kayıt Oluşturma               | /addtask                  |
-| POST   | İş Kaydına Yorum Yapma           | /comment/<task_id>        |
+| POST   | İş Kaydına Yorum Yapma           | /comment                  |
 | DELETE | İş Kaydını Silme                 | /delete/tasks/<task_id>   |
 | PUT    | İş Kaydını Güncelleme            | /update/tasks/<task_id>   |
 
