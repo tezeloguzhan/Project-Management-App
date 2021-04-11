@@ -48,8 +48,9 @@ if __name__ == "__main__":
 # API ENDPOINTS
 
 POSTMAN Dökümantasyonuna ulaşmak için : <br/>
-[Postman Dökümantasyon](https://documenter.getpostman.com/view/14844311/TzCV3QDL) – 
+[Postman Dökümantasyon](https://documenter.getpostman.com/view/14844311/TzCV3QDL) 
 **Kullanıcı İşlemleri**
+<br/>
 
 | METOD | İŞLEM | ENDPOINT |
 | —— | —— | —— |
