@@ -4,6 +4,7 @@
 **Flask Rest Api** <br/>
 **Flask Marshmallow** <br/>
 **Flask JWT** <br/>
+**BCrypt** <br/>
 **MongoEngine** <br/>
 **Docker** <br/>
 
