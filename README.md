@@ -50,46 +50,38 @@ if __name__ == "__main__":
 POSTMAN Dökümantasyonuna ulaşmak için : <br/>
 [Postman Dökümantasyon](https://documenter.getpostman.com/view/14844311/TzCV3QDL) <br/>
 <br/>
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| METOD | İŞLEM | ENDPOINT |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  |
 <br/>
 **Kullanıcı İşlemleri**
 <br/>
 
-| METOD | İŞLEM | ENDPOINT |
-| —— | —— | —— |
-| GET | Kullanıcı Kayıtlarını Getirme | /users |
-| POST | Kullanıcı Kayıt Oluşturma | /signup |
-| POST | Kullanıcı Giriş Yapma | /login |
+| METOD   | İŞLEM                         | ENDPOINT |
+| :---    | :---:                         | ---:     |
+| GET     | Kullanıcı Kayıtlarını Getirme | /users   |
+| POST    | Kullanıcı Kayıt Oluşturma     | /signup  |
+| POST    | Kullanıcı Giriş Yapma         | /login   |
 
 **İş Kayıt İşlemleri**
 
-| METOD | İŞLEM | ENDPOINT |
-| —— | —— | —— |
-| GET |  Tüm İş Kayıtlarını Getirme | /tasks |
-| GET |  İstenilen İş Kaydını Getirme | /tasks/<task_id> |
-| POST | İş Kayıt Oluşturma | /addtask |
-| POST | İş Kaydına Yorum Yapma | /comment/<task_id> |
-| DELETE | İş Kaydını Silme | /delete/tasks/<task_id> |
-| PUT | İş Kaydını Güncelleme | /update/tasks/<task_id> |
+| METOD  | İŞLEM                            | ENDPOINT                  |
+| ——     | ——                               | ——                        |
+| GET    |  Tüm İş Kayıtlarını Getirme      | /tasks                    |
+| GET    |  İstenilen İş Kaydını Getirme    | /tasks/<task_id>          |
+| POST   | İş Kayıt Oluşturma               | /addtask                  |
+| POST   | İş Kaydına Yorum Yapma           | /comment/<task_id>        |
+| DELETE | İş Kaydını Silme                 | /delete/tasks/<task_id>   |
+| PUT    | İş Kaydını Güncelleme            | /update/tasks/<task_id>   |
 
 
 **Proje İşlemleri**
 
-| METOD | İŞLEM | ENDPOINT |
-| —— | —— | —— |
-| GET | Tüm Projeleri Getirme | /projects |
-| POST | Proje Oluşturma | /addprojects |
-| DELETE | Proje Silme | /delete/project/<project_id>  |
-| PUT | Proje Güncelleme | /update/project/<project_id>|
+| METOD  | İŞLEM                 | ENDPOINT                     |
+| ——     | ——                    | ——                           |
+| GET    | Tüm Projeleri Getirme | /projects                    |
+| POST   | Proje Oluşturma       | /addprojects                 |
+| DELETE | Proje Silme           | /delete/project/<project_id> |
+| PUT    | Proje Güncelleme      | /update/project/<project_id> |
 
-
-| Başlık1 | Başlık2 | Başlık3 |
-| —— | —— | —— |
-| Satır 1 Sütun 1 | Satır 1 Sütun 2 | Satır 1 Sütun 3 |
-| Satır 2 Sütun 1 | Satır 2 Sütun 2 | Satır 2 Sütun 3 |
-| Satır 3 Sütun 1 | Satır 3 Sütun 2 | Satır 3 Sütun 3 |
-| Satır 4 Sütun 1 | Satır 4 Sütun 2 | Satır 4 Sütun 3 |
-| Satır 5 Sütun 1 | Satır 5 Sütun 2 | Satır 5 Sütun 3 |
