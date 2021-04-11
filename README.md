@@ -48,12 +48,13 @@ if __name__ == "__main__":
 # API ENDPOINTS
 
 POSTMAN Dökümantasyonuna ulaşmak için : <br/>
-[Postman Dökümantasyon](https://documenter.getpostman.com/view/14844311/TzCV3QDL) 
-
+[Postman Dökümantasyon](https://documenter.getpostman.com/view/14844311/TzCV3QDL) <br/>
+<br/>
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+<br/>
 **Kullanıcı İşlemleri**
 <br/>
 
